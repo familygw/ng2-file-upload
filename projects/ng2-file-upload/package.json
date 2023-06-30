@@ -1,7 +1,7 @@
 {
   "name": "ng2-file-upload",
   "version": "5.0.0",
-  "description": "Angular file uploader",
+  "description": "Angular file uploader (NG16 support)",
   "author": "Dmitriy Shekhovtsov <valorkin@gmail.com>",
   "license": "MIT",
   "peerDependencies": {
