@@ -1,11 +1,12 @@
 {
   "name": "ng2-file-upload",
-  "version": "5.0.0",
+  "version": "16.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
+    "demo": "ng serve demo-app",
     "test": "ng test"
   },
   "private": true,

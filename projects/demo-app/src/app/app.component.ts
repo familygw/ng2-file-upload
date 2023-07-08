@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FileUploader } from "projects/ng2-file-upload";
+import { FileItem, FileUploader } from "ng2-file-upload";
 
 const URL = 'https://evening-anchorage-3159.herokuapp.com/api/';
 
@@ -9,12 +9,38 @@ const URL = 'https://evening-anchorage-3159.herokuapp.com/api/';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'demo-app';
+  title = 'Angular File Upload - Demo App';
 
+  response: string;
   uploader: FileUploader;
+  isUploading: boolean;
   hasBaseDropZoneOver: boolean;
   hasAnotherDropZoneOver: boolean;
-  response: string;
+  displayedColumns: string[] = [
+    "name",
+    "size",
+    "progress",
+    "status",
+    "actions"
+  ];
+
+  get dataSource(): any[] {
+    if (!this.uploader) return [];
+
+    return this.uploader.queue.map(fi => ({
+      name: fi.file.name ?? "",
+      size: fi.file.size ?? 0,
+      progress: fi.progress ?? 0,
+      isSuccess: !!fi.isSuccess,
+      isCancel: !!fi.isCancel,
+      isError: !!fi.isError,
+      isReady: !!fi.isReady,
+      isUploading: !!fi.isUploading,
+      remove: fi.remove.bind(fi),
+      upload: fi.upload.bind(fi),
+      cancel: fi.cancel.bind(fi)
+    }))
+  }
 
   constructor() {
     this.uploader = new FileUploader({
@@ -33,12 +59,20 @@ export class AppComponent {
       }
     });
 
+    this.isUploading = false;
     this.hasBaseDropZoneOver = false;
     this.hasAnotherDropZoneOver = false;
 
     this.response = '';
 
-    this.uploader.response.subscribe(res => this.response = res);
+    this.uploader.onBeforeUploadItem = () => {
+      this.isUploading = true;
+    };
+
+    this.uploader.response.subscribe(res => {
+      this.response = res;
+      this.isUploading = false;
+    });
   }
 
   fileOverBase(e: any): void {
