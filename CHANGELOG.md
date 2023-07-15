@@ -1,3 +1,17 @@
+### Changes
+- Updated the library and test project to Angular 16.1.5
+- Updated semver dependency to 7.5.4
+- Updated demo-app to use ([Angular Material](https://material.angular.io/))
+
+# [16.0.1]()
+
+### Changes
+
+- Updated the library and test project to Angular 16
+- Updated semver dependency to 7.5.3
+
+# [16.0.0]()
+
 # [3.0.0](https://github.com/valor-software/ng2-file-upload/compare/v2.0.0-3...v3.0.0) (2022-12-12)
 
 
