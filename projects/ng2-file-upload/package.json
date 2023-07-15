@@ -15,12 +15,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/valor-software/ng2-file-upload.git"
+    "url": "git+ssh://git@github.com/familygw/ng2-file-upload.git"
   },
   "bugs": {
-    "url": "https://github.com/valor-software/ng2-file-upload/issues"
+    "url": "https://github.com/familygw/ng2-file-upload/issues"
   },
-  "homepage": "https://github.com/valor-software/ng2-file-upload#readme",
+  "homepage": "https://github.com/familygw/ng2-file-upload#readme",
   "keywords": [
     "angular",
     "upload file",
