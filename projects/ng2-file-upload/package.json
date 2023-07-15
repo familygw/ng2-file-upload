@@ -11,7 +11,7 @@
   "sideEffects": false,
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
-    "tag": "next"
+    "tag": "latest"
   },
   "repository": {
     "type": "git",
