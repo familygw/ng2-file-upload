@@ -1,6 +1,6 @@
 {
   "name": "@familygw/ng2-file-upload",
-  "version": "16.0.1",
+  "version": "16.1.5",
   "description": "Angular file uploader",
   "author": "Carlos A. Leguizamon (org: Dmitriy Shekhovtsov <valorkin@gmail.com>)",
   "license": "MIT",

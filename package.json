@@ -9,13 +9,14 @@
     "url": "https://github.com/familygw/ng2-file-upload/issues"
   },
   "name": "ng2-file-upload",
-  "version": "16.0.1",
+  "version": "16.1.5",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "demo": "ng serve demo-app",
+    "publish": "ng build ng2-file-upload && npm publish --access=public @familygw/ng2-file-upload",
     "test2": "ng test"
   },
   "private": true,
