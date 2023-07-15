@@ -9,7 +9,7 @@ Easy to use Angular2 directives for files upload ([demo](http://valor-software.g
 
 1. A recommended way to install ***ng2-file-upload*** is through [npm](https://www.npmjs.com/search?q=ng2-file-upload) package manager using the following command:
 
-  `npm i ng2-file-upload --save`
+  `npm i @familygw/ng2-file-upload --save`
 
   Alternatively, you can [download it in a ZIP file](https://github.com/valor-software/ng2-file-upload/archive/master.zip).
 
