@@ -1,5 +1,11 @@
 ### Changes
 - Updated version to match Angular
+- Updated dependencies (removed direct dependency of semver)
+
+# [16.1.6]()
+
+### Changes
+- Updated version to match Angular
 
 # [16.1.5]()
 
